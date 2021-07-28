@@ -1,15 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
+const App = () => {
+
+  const APP_ID = '703c21fa';
+  const APP_KEY = '703c21fa';
+
+  return(
+
     <div className="App">
-
-      <h1>hello React</h1>
-     
-
+      <h1>Hello React</h1>
     </div>
   );
+
 }
 
 export default App;
