@@ -6,6 +6,10 @@ const App = () => {
   const APP_ID = '703c21fa';
   const APP_KEY = '703c21fa';
 
+  const example_rqst =  `https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`;
+
+ 
+
   return(
 
     <div className="App">
