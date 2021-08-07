@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React,{useEffect,useState}from "react";
 import './App.css';
 
 const App = () => {
@@ -8,15 +8,22 @@ const App = () => {
 
   const exampleRequest =  `https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`;
 
- 
+
+  const[counter, setCounter] = useState(0);
+
+
+ useEffect(() => {
+   console.log('Effect has been run');
+ });
 
   return(
 
     <div className="App">
       <form>
         <input className="search-bar" type="text" placeholder=""/>
-        <button className="search-button" type = "submit">
+        <button onClick={() => setCounter(counter+1)} className="search-button" type = "submit">
           Search
+          {counter}
         </button>
       </form>
     </div>
