@@ -1,6 +1,6 @@
 import React,{useEffect,useState}from "react";
 import './App.css';
-import Recipe from "../Recipe";
+import Recipe from '../src/Recipe';
 
 const App = () => {
 
@@ -19,9 +19,7 @@ const getRecipes = async () => {
   const data = await response.json();
   setRecipes(data.hits);
   console.log(data.hits);
-
-  
-}
+};
 
   return(
 
@@ -35,8 +33,11 @@ const getRecipes = async () => {
       </form>
       
       {recipes.map(recipe => (
-        <Recipe/>
-      ))};
+        <Recipe title = {recipe.recipe.label} 
+        calories= {recipe.recipe.calories}
+        image= {recipe.recipe.image}
+        />
+      ))}
 
     </div>
   );
