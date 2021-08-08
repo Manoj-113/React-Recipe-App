@@ -1,5 +1,6 @@
 import React,{useEffect,useState}from "react";
 import './App.css';
+import Recipe from "../Recipe";
 
 const App = () => {
 
@@ -31,7 +32,11 @@ const getRecipes = async () => {
           
         </button>
       </form>
-      <h1 onClick={() => setCounter(counter+1)}>{counter}</h1>
+      
+      {recipes.map(recipe => (
+        <Recipe/>
+      ))};
+
     </div>
   );
 
