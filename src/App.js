@@ -42,7 +42,7 @@ const getSearch = e => {
           Search
         </button>
       </form>
-      
+      <div className="recipes">
       
       {recipes.map(recipe => (
         <Recipe 
@@ -53,6 +53,8 @@ const getSearch = e => {
         ingredients= {recipe.recipe.ingredients}
         />
       ))}
+
+      </div>
 
     </div>
   );

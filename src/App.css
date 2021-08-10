@@ -7,13 +7,27 @@
 .search-form{
   min-height: 10vh;
   display:flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
 }
 
 .search-bar{
   width: 50%;
   border: none;
-  padding: 10px;
+  padding: 5px;
+}
+
+.search-buttons{
+  background: lightcoral;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+}
+
+.recipes{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
 }
